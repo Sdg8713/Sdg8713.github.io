@@ -1,0 +1,314 @@
+body{
+    background: #0d1b2a;
+    font-family: 'Oswald', sans-serif;
+    width: 90%;
+    height: 90%;
+    max-width: 1440px;
+    max-height: 1024px;
+}
+
+.caja{
+    width: 70%;
+    background: #0d1b2a;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+}
+
+#titulo{
+    font-size: 60px;
+    color: #e0e1dd;
+    margin: 10px 30%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#textoEncriptado{
+    float: left;
+    border: 1em;
+    margin: 150px 623px 808px 240px;
+    width: 577px;
+    height: 48px;
+    color: #e0e1dd;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    background: #0d1b2a;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#textoEncriptado::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: #e0e1dd;
+}
+
+.cuadroDerecho{
+    float: top;
+    border-radius: 32px;
+    width: 30%;
+    height: 944px;
+    background: #778da9;
+    margin: 1px 0px 40px 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#muneco{
+    position: relative;
+    top: -800px;
+    left: 30px;
+}
+
+#textoDesencriptado{
+    position: relative;
+    top: -700px;
+    width: 336px;
+    height: 122px;
+    margin: 619 72 283 1032;
+    left: 30px;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    resize: none;
+    background: #778da9;
+}
+
+#textoDesencriptado::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: #1b263b;
+}
+
+#leyenda{
+    position: relative;
+    top: -680px;
+    left: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#advertencia{
+    position: relative;
+    right: 1200px;
+    top: -160px;
+    text-align: center;
+    margin: 851 971 155 240;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botones{
+    width: 680px;
+    height: 70px;
+    margin: 885 520 72 240;
+}
+
+#botonEncriptador{
+    margin: 885 872 72 240;
+    position: relative;
+    left: 250px;
+    top: -150px;
+    width: 328px;
+    height: 67px;
+    background: #415a77;
+    border-radius: 24px;
+    color: gray;
+    transition: 1s all;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botonEncriptador span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    color: #e0e1dd;
+    top: 25px;
+}
+
+#botonEncriptador .lock {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+#botonEncriptador svg {
+    color: #1b263b;
+    width: 25px;
+    height: 25px;
+}
+
+#botonEncriptador:hover .lock{
+    left: 280px;
+    opacity: 1;
+}
+
+#botonEncriptador:hover span {
+    left: 20px;
+    color: #1b263b;
+}
+
+#botonEncriptador:hover{
+    background: #e0e1dd;
+}
+
+#botonDesencriptador{
+    margin: 886 520 72 592;
+    position: relative;
+    left: 270px;
+    top: -150px;
+    width: 328px;
+    height: 67px;
+    background: #e0e1dd;
+    border-radius: 24px;
+    color: #415a77;
+    transition: 1s all;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botonDesencriptador span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    color: #415a77;
+    top: 25px;
+}
+
+#botonDesencriptador .unlock {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+#botonDesencriptador svg {
+    color: #e0e1dd;
+    width: 25px;
+    height: 25px;
+}
+
+#botonDesencriptador:hover .unlock{
+    left: 280px;
+    opacity: 1;
+}
+
+#botonDesencriptador:hover span {
+    left: 20px;
+    color: #e0e1dd;   
+}
+
+#botonDesencriptador:hover{
+    background:#415a77; 
+}
+
+#botonCopiar{
+    display: none;
+    position: relative;
+    left: 1055px;
+    top: -220px;
+    width: 328px;
+    height: 67px;
+    background: #1b263b;
+    border-radius: 24px;
+    color: #e0e1dd;
+    transition: 1s all;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botonCopiar span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+    text-align: center;
+    color: #e0e1dd;
+    top: 25px;
+}
+
+#botonCopiar .icncopy {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+#botonCopiar svg {
+    color: #e0e1dd;
+    width: 25px;
+    height: 25px;
+}
+
+#botonCopiar:hover .icncopy{
+    left: 280px;
+    opacity: 1;
+}
+
+#botonCopiar:hover span {
+    left: 20px;
+    color: #e0e1dd;   
+}
+
+#botonCopiar:hover{
+    background:#1b263b;
+}
+
+.pieDePagina{
+    width: 1440px;
+    height: 100px;
+}
+
+#logoOne{
+    width: 120px;
+    height: 80px;
+    padding: 20px;
+    position: relative;
+    bottom: -100px;
+    left: 1300px;
+}
+
+#copy{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20 20 20 20;
+    color: #e0e1dd;
+}
+
+@media screen and (max-width: 800px) {
+    .caja {
+        width: 100%;
+    }
+    .cuadroDerecho {
+        width: 100%;
+    }
+    #muneco{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #muneco{
+        display: none;
+    }
+}
